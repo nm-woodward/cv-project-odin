@@ -1,14 +1,23 @@
 
-* {
-}
+
 .App {
+  display: flex;
+  margin: 50px;
+
+}
+
+#cv {
   display: grid;
   width: 850px;
   grid-template-columns: 200px 600px;
   grid-template-rows: minmax(1000px,70vh);
-  margin: 50px;
+
   border: 1px solid black;
   background-color: rgb(249, 245, 239);
+}
+
+#form {
+  margin-left: 25px;
 }
 
 #aside {
