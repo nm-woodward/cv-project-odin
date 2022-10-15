@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import Form from './Form.js';
 
-class Heading extends Component {
+
+class Heading extends Form {
   constructor(props) {
     super(props);
 
@@ -19,7 +21,7 @@ class Heading extends Component {
         id="heading"
         onClick={() => this.props.changeFormToProfile("it worked!")}
       >
-        <div id="fullName">{name}</div>
+        <div id="fullName">{this.props.nameValue}</div>
         <div id="title">{title}</div>
         <div id="profile">
           <h2 id="profileHeader">Profile</h2>
